@@ -1,0 +1,1894 @@
+/* COLORS
+#352f44
+#2a2438
+#f4f4f4
+#8E8D8A
+#27b368
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  background-color: transparent;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 10px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  transition: .3s ease;
+}
+
+#myBtn:hover {
+  transform: scale(1.5);
+}
+
+a {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  /*IMPORTANT*/
+}
+
+strong {
+  color: #27b368;
+}
+
+u {
+  color: #27b368;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h4 {}
+
+h5 {
+  color: white;
+}
+
+h6 {
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  color: grey;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-style {
+  color: #27b368;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #27b368;
+  /* <—– change your color here*/
+  background-color: transparent;
+}
+
+#top-nav .navbar-nav li>a {
+  text-transform: capitalize;
+  color: #f8f8f8;
+  -webkit-transition: background-color .2s, #27b368 .2s;
+  transition: background-color .2s, #27b368 .2s;
+
+  &:hover,
+  &:focus {
+    color: #27b368;
+  }
+}
+
+#top-nav .navbar-nav li.active>a {
+  color: #27b368;
+}
+
+/* #top-nav {
+  height: 90px;
+} */
+p {
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: .55rem 5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  border-radius: 0.65rem;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.btn-outline-dark {
+  background-color: #27b368;
+  border-color: #27b368;
+  color: #fff;
+}
+
+.btn-outline-dark:hover {
+  background-color: #017E3B;
+  border-color: #017E3B;
+  color: #fff;
+}
+
+#footer .btn-outline-dark:hover {
+  background-color: #017E3B;
+  border-color: #017E3B;
+  color: #fff;
+}
+
+.btn-light {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  padding: 7px 40px;
+}
+
+/********** ARROW BUTTONS ***************/
+a#top-btn {
+  color: #27b368;
+  font-size: 25px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 99;
+  background-color: Transparent;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#down-btn {
+  font-size: 60px;
+  color: #27b368;
+  transition: .4s;
+}
+
+#down-btn:hover {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/*
+.arrow-down-right {
+  position: absolute;
+  right: 30%;
+  bottom: 10%;
+  -webkit-animation-name: rotateLeft;
+  animation-name: rotateLeft;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.arrow-down-left {
+  position: absolute;
+  left: 30%;
+  bottom: 10%;
+  -webkit-animation-name: rotateRight;
+  animation-name: rotateRight;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+} */
+.arrow-down-middle {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 25%;
+  /* opacity: .7; */
+  /* transform: translate(-50%, -50%); */
+  -webkit-animation-name: downUp;
+  animation-name: downUp;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3.0s;
+  -webkit-animation-delay: 2.5s;
+  animation-timing-function: linear;
+  animation-delay: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  transition: .5s;
+}
+
+.arrows {
+  backface-visibility: hidden;
+}
+
+/**********CEO SECTION***************/
+.ceo-heading {
+  color: #fff;
+  font-family: Montserrat, arial;
+  font-weight: 400;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.ceo-btns {
+  display: block;
+  font-size: 3rem;
+  font-family: Montserrat, arial;
+}
+
+/*******************************PODCAST*****************************************/
+#podcast {
+  background-image: linear-gradient(#0000008c, #0000008c), url(/images/lance-podcast.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+#podcast p {
+  font-size: 20px;
+  font-family: Montserrat, arial;
+  color: #fff;
+}
+
+.img-container {
+  background-image: linear-gradient(#000, #000);
+  position: relative;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.podcast-elements {
+  z-index: 99;
+}
+
+.site-btn {
+  background: transparent;
+  border: 2px solid #979797;
+  border-radius: 10px;
+  height: 38px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  width: 180px;
+  padding: 0px !important;
+  font-size: 18px;
+  transition: all .75s ease;
+  -webkit-transition: all .75s ease;
+  opacity: .7;
+}
+
+.site-btn:hover {
+  background-color: #27b368;
+  color: #fff;
+  opacity: 1;
+}
+
+#about-me .site-btn {
+  font-size: 17px;
+  width: 300px;
+}
+
+#about-me a {
+  margin-top: 20px;
+}
+
+/* .site-btn {
+	box-shadow: 0px 1px 0px 0px #363031;
+	background:linear-gradient(to bottom, #e54b4e 5%, #5e4e4f 100%);
+	background-color:#e54b4e;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Montserrat;
+	font-size:22px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #283966;
+}
+.site-btn:hover {
+	background:linear-gradient(to bottom, #5e4e4f 5%, #e54b4e 100%);
+	background-color:#5e4e4f;
+}
+.site-btn:active {
+	position:relative;
+	top:1px;
+} */
+.podcast-social {
+  margin-right: 3px;
+  font-size: 2rem;
+  color: #fff
+}
+
+.podcast-heading {
+  text-align: left;
+  color: #27b368;
+}
+
+.main-hr {}
+
+.podcast-link {
+  text-align: center;
+  color: #27b368;
+  font-size: 1.5rem;
+}
+
+.podcast-link:hover {
+  color: #27b368;
+}
+
+/**************************White Section***********************/
+.white-section h1 {
+  font-family: Montserrat, arial;
+  font-weight: 600;
+}
+
+/*************************Articles Section*********************/
+#articles {
+  background-color: white;
+}
+
+#articles .site-btn {
+  opacity: 1;
+  border: 1.25px solid #000;
+}
+
+.articles-container {
+  display: relative;
+}
+
+.article-elements-left {
+  height: 350px;
+  background-image: linear-gradient(#0000006c, #0000006c), url(/images/keys.png);
+  font-weight: 400;
+  color: #000;
+  padding: 20px 0 90px;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.article-elements-center {
+  height: 350px;
+  background-image: linear-gradient(#0000006c, #0000006c), url(/images/money.png);
+  font-weight: 400;
+  padding: 20px 0 90px;
+  text-align: center;
+  transition: .4s;
+  background-repeat: no-repeat;
+}
+
+.article-elements-right {
+  height: 350px;
+  background-image: linear-gradient(#0000006c, #0000006c), url(/images/traffic-light.png);
+  font-weight: 400;
+  color: #000;
+  padding: 20px 0 90px;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.article-elements-right:hover {}
+
+.article-a {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.article-a--right:hover {
+  background-image: linear-gradient(#0000006c, #00000000), url(/images/traffic-light.png);
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+.article-a--center:hover {
+  background-image: linear-gradient(#0000006c, #00000000), url(/images/money.png);
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+.article-a--left:hover {
+  background-image: linear-gradient(#0000006c, #00000000), url(/images/keys.png);
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+#articles .block .btn-outline-dark {
+  background-color: ;
+}
+
+.article-elements-right:hover,
+.article-elements-center:hover,
+.article-elements-left:hover {
+  background-color:
+}
+
+.articles-hr {
+  width: 50px;
+  border: 1px solid;
+  color: #fff;
+}
+
+.cash-img {
+  height: 246px;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.articles-heading {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.articles-img {
+  opacity: .6;
+}
+
+.articles-img:hover {
+  opacity: .3;
+}
+
+/* Title Section */
+.wrapper {
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.nav-colored {
+  background-color: black;
+}
+
+#top-nav {
+  width: 100%;
+  background-color: black;
+}
+
+/* #top-btn {
+  /* display: none; */
+position: fixed;
+bottom: 20px;
+right: 50px;
+z-index: 99;
+background-color: Transparent;
+cursor: pointer;
+padding: 15px;
+font-size: 18px;
+}
+
+*/ #top-btn:hover {
+  transform: scale(1.5);
+}
+
+#notification-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50px;
+  z-index: 99;
+  /* background-color: Transparent; */
+  cursor: pointer;
+  padding: 15px;
+  font-size: 35px;
+  color: #27b368;
+}
+
+#notification-btn:hover {
+  caption-side: "subscribe";
+  font-size: 50px;
+}
+
+.carousel-container {
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.carousel-logo {
+  -webkit-animation-name: moveInLeft;
+  animation-name: moveInLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+/*<!-- Carousel Top Text -->*/
+.carousel-header {
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  width: 80%;
+}
+
+.carousel-header img {
+  text-align: center;
+}
+
+.carousel-inner {
+  height: fit-content;
+}
+
+#arrow-up {
+  position: fixed;
+  bottom: 20px;
+  font-size: 3em;
+  transition: .4s;
+}
+
+#top-btn::after {
+  content: "Scroll to top";
+  display: block;
+  position: absolute;
+  bottom: 85%;
+  right: 0;
+  font-size: .8rem;
+  font-family: Montserrat, arial;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform ease-in 150ms;
+}
+
+#arrow-up:hover {
+  transform: scale(1.5);
+}
+
+#top-btn:hover::after {
+  transform: scale(1);
+}
+
+/******************** About Me Section ***********************/
+#about-me {
+  padding: 100px 0;
+}
+
+#about-me p {
+  font-family: 'Montserrat', arial;
+  /* font-weight: 400; */
+}
+
+.about-img {
+  position: relative;
+  bottom: 100px;
+  height: 500px;
+  width: 300px;
+}
+
+.about-heading {
+  font-family: Montserrat, arial;
+  text-align: left;
+  /* color: #27b368; */
+}
+
+.about-link {
+  color: #27b368;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-link:hover {
+  color: #27b368;
+}
+
+.lance-about-img {
+  float: left;
+  height: 150%;
+  width: 130%;
+}
+
+/*****************Home Quote************************/
+#home-quote {
+  margin: 0 20px;
+  text-align: center;
+  font-family: Montserrat, arial;
+  padding: 60px 0;
+}
+
+#home-quote h3 {
+  font-weight: 100;
+}
+
+#home-quote p {
+  font-size: 20px;
+}
+
+/**************** SOCIAL ***************************/
+#cta h3 {
+  font-family: Montserrat, arial;
+  font-weight: 400;
+}
+
+#testimonials p {
+  font-family: Montserrat, arial;
+  font-weight: 400;
+}
+
+/**********************Testimonials********************************/
+#testimonial-carousel {
+  /* background-image: linear-gradient(#0000008c, #0000008c), url(/images/house.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  opacity: .8;
+  background-color: #fff;
+  /* background-color;#27b368; */
+  max-height: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 150px;
+  width: 60px;
+  outline: none;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 50px;
+  color: #27b368;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: #27b368;
+}
+
+.testimonial-img1 {
+  border-radius: 90%;
+}
+
+.testimonial-img2 {
+  border-radius: 100%;
+}
+
+.testimonial-img3 {
+  border-radius: 100%;
+}
+
+#testimonials h3 {
+  font-family: Montserrat, arial;
+  font-weight: 100;
+}
+
+#testimonial-carousel p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/********************* Social Bottom *******************************/
+#social {
+  background-image: linear-gradient(#0000008c, #0000008c), url(/images/lance6.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 50px 0;
+  background-color: #3a3535;
+}
+
+.social-heading {
+  color: #27b368;
+}
+
+.social-media {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.social-media:hover {
+  color: black;
+}
+
+.sp-circle-lg {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 25px;
+}
+
+.sp-circle {
+  display: inline-block;
+  border-radius: 100%;
+  text-align: center;
+  transition: .4s;
+  vertical-align: middle;
+}
+
+.sp-circle:hover {
+  transform: scale(1.2);
+}
+
+.apple:hover {
+  color: #3c3c3f;
+}
+
+.amazon:hover {
+  color: #f2941a;
+}
+
+.google:hover {
+  color: #4285f4;
+}
+
+.spotify:hover {
+  color: #25d061;
+}
+
+/* .sp-circle:hover {
+  color: #007bff;
+} */
+.youtube:hover {
+  color: red;
+}
+
+.snapchat:hover {
+  color: yellow;
+}
+
+.podcast-btn:hover {
+  color: #27b368;
+}
+
+/* .sp-circle-invert:hover{
+  background-color:yellow;
+} */
+.instagram:hover {
+  color: #08a5cb
+}
+
+.twitter:hover {
+  color: #1da1f2
+}
+
+.linkedin:hover {
+  color: #0073b1
+}
+
+.sp-circle-invert {
+  background: #fff;
+  color: #000;
+}
+
+.social-caption {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 5%;
+}
+
+.footer-h5 {
+  color: #27b368;
+}
+
+#footer a:hover {
+  color: #27b368;
+}
+
+#footer {
+  background-color: black;
+  padding: 2rem 0;
+}
+
+#footer input {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+/* #footer .site-btn{
+  opacity: 1;
+  background-color:#fff;
+  width:250px;
+} */
+/* #footer .btn{
+  text-align: center;
+} */
+#footer .btn:hover {
+  border-color: darken(#27b368, 20%);
+  background-color: darken(#27b368, 20%);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.copyright-logo {
+  width: 400px;
+  text-align: center;
+  padding: 60px 0 10px;
+  margin: 0 auto;
+}
+
+/*                      ABOUT PAGE                           */
+/* #about-title{
+  background-image: url(/images/npr-helps.jpg);
+  background-repeat: no-repeat;
+  padding: 300px 0;
+} */
+#about-lance {
+  padding: 120px 0 30px;
+}
+
+#about-lance h1 {
+  animation: moveInLeft .75s;
+}
+
+#about-lance .adjectives {
+  font-family: Montserrat, arial;
+  padding: 100px 0 50px;
+  text-align: center;
+}
+
+#about-lance hr {
+  background: #27b368;
+  width: 50px;
+  font-weight: 100;
+}
+
+#about-lance .container-fluid {
+  padding: 100px 50px;
+}
+
+#about-lance h1 {
+  font-family: Montserrat, arial;
+  font-weight: 600;
+}
+
+#about-lance h2 {
+  color: #3a3535;
+}
+
+#about-lance p {
+  font-family: Montserrat, arial;
+}
+
+#cta h4 {
+  font-family: Montserrat, arial;
+}
+
+.description {
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.check-circle {
+  color: #27b368;
+  padding-right: 10px;
+}
+
+#cta {
+  /* background-image: url(/images/white-wall.jpg); */
+  background-color: #f4f4f4;
+  padding: 75px 30px 40px;
+}
+
+#cta .form {
+  text-align: center;
+}
+
+.lance-about1 {
+  height: 700px;
+  float: right;
+  /* clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%) */
+}
+
+.lance-about2 {
+  height: 800px;
+  float: right;
+  /* clip-path: polygon(0 29%, 100% 0, 100% 100%, 0% 100%) */
+}
+
+.lance-about3 {
+  height: 800px;
+  /* clip-path: polygon(0 0, 83% 19%, 85% 100%, 0 100%) */
+}
+
+.about-quote {
+  /* background-color: #f4f4f4; */
+  background-image: linear-gradient(#0000008c, #0000008c), url(/images/npr-helps.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: Montserrat, arial;
+  font-weight: 600;
+  margin: 50px 0;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.quote-position {
+  position: relative;
+  top: 100px;
+}
+
+.middle-container {
+  margin: 20px 0 100px;
+  ;
+}
+
+.subscribe {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*******************************Contact Page***************************/
+.green-box {
+  background: linear-gradient(to right, #27b368, #71D7A0);
+  height: 900px;
+  padding: 100px 0;
+  position: relative;
+  -webkit-clip-path: polygon(0 53%, 100% 0, 100% 99%, 0% 100%);
+  clip-path: polygon(0 53%, 100% 0, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+.contact__h1 {
+  color: #27b368;
+  font-family: Montserrat, arial;
+  font-weight: 400;
+}
+
+.contact__h6 {
+  font-size: 1.5rem;
+}
+
+.contact__p {
+  font-family: Montserrat, arial;
+  font-weight: '100px';
+  font-size: 20px;
+}
+
+.contact__form {
+  border-radius: 10px;
+  display: block;
+  background-color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  top: 350px;
+  left: 30%;
+  transform: translateX(-300px);
+  z-index: 5;
+  box-shadow: 5px 5px 5px 5px #0000002b;
+}
+
+.contact__icon {
+  margin-top: 200px;
+}
+
+.contact__i {
+  font-size: 40px;
+  color: #fff;
+  margin-right: 12px;
+}
+
+.contact__i--check {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.contact__p--features {
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact__row--bottom {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+/*******************************NEWS***************************/
+#news {
+  margin: 100px 0 0;
+}
+
+.lead {
+  font-family: Montserrat, arial;
+  margin: 30px;
+}
+
+.articles__jumbotron {
+  text-align: center;
+}
+
+.news__img {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+}
+
+.card-title {
+  color: #000;
+  font-weight: 400;
+}
+
+.row__podcast {
+  margin: 50px 0;
+}
+
+.follow {
+  padding: 100px 10px;
+  margin-top: 20px;
+}
+
+.follow h3 {
+  display: inline;
+  font-family: Montserrat, arial;
+}
+
+.follow .btn {
+  margin: 0 10px 10px;
+}
+
+/*******************************ANIMATIONS***************************/
+.js-show-on-scroll {
+  opacity: 0;
+  transition: all 3000ms;
+}
+
+.slide-left {
+  transform: translateX(100%);
+}
+
+.slide-right {
+  transform: translateX(-100%);
+}
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes downUp {
+  0% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(0px);
+  }
+
+  85% {
+    transform: translateY(20px);
+  }
+
+  95% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    /* opacity: 0; */
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    /* opacity: 0; */
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+/************************ Other Browsers **************************/
+/* @media not all and (min-resolution:.001dpcm) {
+    @media {
+        .carouse-logo {
+            position:relative;
+            bottom: 600px;
+
+        }
+    }
+} */
+/*--Responsive--*/
+/*---DesktopCode---*/
+@media (min-width: 1200px) {
+  .wrappernav {
+    background-color: #000;
+    padding-top: 20px;
+  }
+
+  .wrappertop {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrappertop {
+    background-image: url(/images/lance.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 920px;
+  }
+
+  nav {
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+  }
+
+  #top-nav .navbar-nav li:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  .social {
+    color: white;
+    position: absolute;
+    padding-top: 20px;
+    right: 20px;
+  }
+
+  a.iconstop {
+    padding-right: 15px;
+  }
+
+  .logo-top {
+    margin: 0 auto;
+  }
+
+  .navbar .navbar-expand-lg {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .collapse .navbar-collapse {
+    text-align: center;
+  }
+
+  .social-bottom {
+    padding: 0px 4px;
+  }
+
+  .logo-bottom {
+    margin: 0 auto;
+  }
+
+  /* ABOUT PAGE */
+  .lance-about1 {
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%)
+  }
+
+  .lance-about2 {
+    clip-path: polygon(0 29%, 100% 0, 100% 100%, 0% 100%)
+  }
+
+  .lance-about3 {
+    clip-path: polygon(0 0, 83% 19%, 85% 100%, 0 100%)
+  }
+
+  .contact__icon--bottom {
+    display: none;
+  }
+}
+
+/*---DesktopCode---*/
+/*---MiddleDesktopCode---*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrappertop {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrappertop {
+    background-image: url(/images/lance.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  nav {
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+  }
+
+  #top-nav .navbar-nav li:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  #down-btn {
+    top: 500px;
+  }
+
+  .social {
+    color: white;
+    position: absolute;
+    padding-top: 20px;
+    right: 20px;
+  }
+
+  a.iconstop {
+    padding-right: 15px;
+  }
+
+  .logo-top {
+    width: 10%;
+  }
+
+  /***********************About Section**************************/
+  .lance-about-img {
+    float: left;
+    height: 100%;
+    width: 130%;
+  }
+
+  .article-elements-right {
+    padding: 20px 0 95px;
+  }
+
+  /*********************Nav**********************************/
+  .navbar .navbar-expand-lg {
+    text-align: center;
+  }
+
+  /********** ABOUT PAGE **************/
+  .lance-about1 {
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%)
+  }
+
+  .lance-about2 {
+    clip-path: polygon(0 29%, 100% 0, 100% 100%, 0% 100%)
+  }
+
+  .lance-about3 {
+    clip-path: polygon(0 0, 83% 19%, 85% 100%, 0 100%)
+  }
+
+  .contact__icon--bottom {
+    display: none;
+  }
+}
+
+/*---MiddleDesktopCode---*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrappertop {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrappertop {
+    background-image: url(/images/.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  nav {
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+  }
+
+  #top-nav .navbar-nav li:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  #down-btn {
+    top: 500px;
+  }
+
+  .social {
+    color: white;
+    position: absolute;
+    padding-top: 20px;
+    right: 20px;
+  }
+
+  a.iconstop {
+    padding-right: 15px;
+  }
+
+  .logo-top {
+    width: 70%;
+  }
+
+  .ceo-heading {
+    font-size: 3rem;
+  }
+
+  .ceo-btns {
+    font-size: 2rem;
+  }
+
+  .article-elements-center {
+    padding: 20px 0 95px;
+  }
+
+  .article-elements-right {
+    padding: 20px 0 95px;
+  }
+
+  /***********************About Section**************************/
+  #about-me {
+    padding-top: 100px;
+  }
+
+  .lance-about-img {
+    height: 100%;
+  }
+
+  .about-link {
+    position: relative;
+  }
+
+  .link-div {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  /*********************Footer**********************************/
+  .vl {
+    display: none;
+  }
+
+  /*********************Nav**********************************/
+  .navbar .navbar-expand-lg {
+    text-align: center;
+  }
+
+  /********************** CONTACT PAGE ***********************/
+  .contact__form {
+    transform: translateX(-330px);
+    left: 50%;
+    top: 300px;
+    width: 500px;
+    margin-left: 80px;
+  }
+
+  .contact__icon {
+    display: inline;
+    visibility: hidden;
+  }
+
+  .contact__icon--bottom {
+    margin-top: 120px;
+    display: block;
+  }
+
+  .green-box {
+    padding-bottom: 300px;
+    height: 1100px;
+  }
+
+  .contact__row--bottom {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  /********************** NEWS PAGE ***********************/
+  .card__margin--bottom {
+    margin-bottom: 30px;
+  }
+}
+
+/********Tablet*********/
+@media (min-width: 576px) and (max-width: 767px) {
+  .wrappertop {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrappertop {
+    background-image: url(/images/lance.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  nav {
+    font-weight: 100;
+    font-size: 2rem;
+    /* font-weight: 500; */
+    color: white;
+  }
+
+  #top-nav .navbar-nav li:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  .arrow-down-middle {
+    display: block;
+  }
+
+  .arrow-down-right {
+    display: none;
+  }
+
+  .arrow-down-left {
+    display: none;
+  }
+
+  .social {
+    color: white;
+    position: absolute;
+    padding-top: 20px;
+    right: 20px;
+  }
+
+  a.iconstop {
+    padding-right: 15px;
+  }
+
+  .logo-top {
+    width: 75%;
+  }
+
+  .ceo-heading {
+    font-size: 2.25rem;
+  }
+
+  .ceo-btns {
+    font-size: 1.75rem;
+  }
+
+  /***********************About Section**************************/
+  #about-me {
+    padding-top: 20%;
+    padding-bottom: 60px;
+  }
+
+  .lance-about-img {
+    float: left;
+    height: 110%;
+    width: 150%;
+  }
+
+  .link-div {
+    text-align: center;
+    padding: 50px 0 0;
+    ;
+  }
+
+  /***********************About Section**************************/
+  #about-me {
+    padding-top: 20%;
+  }
+
+  .about-link {
+    text-align: center;
+  }
+
+  /***********************Carousel**************************/
+  carousel-logo {
+    display: none;
+    height: 500px;
+  }
+
+  /*********************Nav**********************************/
+  .navbar .navbar-expand-lg {
+    text-align: center;
+  }
+
+  /******************** #cta *******************/
+  #testimonial-carousel h3 {
+    font-size: 22px;
+  }
+
+  #testimonial-carousel p {
+    font-size: 20px;
+  }
+
+  .button-margin {
+    margin-bottom: 40px;
+  }
+
+  .button-margin {
+    margin-bottom: 40px;
+  }
+
+  /*********************Footer**********************************/
+  .vl {
+    display: none;
+  }
+
+  /************ ABOUT PAGE ***************/
+  .quote-position {
+    font-size: 20px;
+  }
+
+  /********************** CONTACT PAGE ***********************/
+  .contact__form {
+    top: 300px;
+    left: 55%;
+    width: 500px;
+  }
+
+  .contact__icon {
+    display: inline;
+    visibility: hidden;
+  }
+
+  .contact__icon--bottom {
+    margin-top: 220px;
+    display: block;
+  }
+
+  .green-box {
+    padding-bottom: 300px;
+    height: 1100px;
+  }
+
+  #contact {}
+
+  .contact__row--bottom {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .contact__row--block {
+    display: block;
+  }
+
+  /********************** NEWS PAGE ***********************/
+  .card__margin--bottom {
+    margin-bottom: 30px;
+  }
+
+  .follow h3 {
+    margin-bottom: 30px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .wrappertop {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrappertop {
+    background-image: url(/images/lance.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #arrow-up {
+    right: 0;
+    width: 8%;
+  }
+
+  nav {
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .fa-angle-up {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 2em;
+    transition: .4s;
+  }
+
+  #down-btn {
+    top: 500px;
+  }
+
+  .fa-angle-up:hover {
+    transform: scale(1.2);
+  }
+
+  /* .arrow-down-right{
+    display: none;
+  }
+
+  .arrow-down-left{
+    display:none;
+  } */
+  .social {
+    color: white;
+    position: absolute;
+    padding-top: 20px;
+    right: 20px;
+  }
+
+  /******************************carousel Section***********************/
+  .ceo-heading {
+    font-size: 1.7rem;
+  }
+
+  .navbar-toggler {
+    line-height: 1;
+    margin: 0 auto;
+  }
+
+  .ceo-btns {
+    font-size: 1.7rem;
+  }
+
+  .carousel-header {
+    top: 700px;
+  }
+
+  /***********************Podcast Section**************************/
+  #podcast p {
+    font-size: 16px;
+  }
+
+  /***********************About Section**************************/
+  #about-me {
+    padding-top: 20%;
+    padding-bottom: 40px;
+  }
+
+  #about-me a {
+    margin-top: 0px;
+  }
+
+  .lance-about-img {
+    padding-top: 5%;
+    height: 110%;
+    width: 150%;
+    right: 120px;
+  }
+
+  .link-div {
+    text-align: center;
+    padding: 50px 0 0;
+    ;
+  }
+
+  /******************** #cta *******************/
+  #testimonial-carousel h3 {
+    font-size: 22px;
+  }
+
+  #testimonial-carousel p {
+    position: relative;
+    bottom: 12px;
+    font-size: 18px;
+  }
+
+  /********************** Footer ************************/
+  #footer .center-mobile {
+    text-align: center;
+  }
+
+  .btn-light {
+    position: relative;
+    bottom: 50px;
+  }
+
+  /*********************Nav**********************************/
+  /*********************Footer**********************************/
+  /* #footer .row{
+    margin-left: 50%;
+    transform: translateX(-120px);
+  } */
+  #footer .row {
+    text-align: center;
+  }
+
+  #footer input {
+    margin-left: 50%;
+    transform: translateX(-125px);
+  }
+
+  /*************** ABOUT PAGE ***********************/
+  .quote-position {
+    font-size: 20px;
+  }
+
+  .lance-about1 {
+    height: 500px;
+  }
+
+  .lance-about2 {
+    height: 500px;
+  }
+
+  #cta h1 {
+    font-size: 24px;
+  }
+
+  #cta h4 {
+    font-size: 17px;
+  }
+
+  .description-hidden-mobile {
+    display: none;
+  }
+
+  .rei-logo-about {
+    margin-top: 20px;
+  }
+
+  .logo-bottom {
+    width: 85%;
+  }
+
+  .copyright-logo {
+    padding-top: 0px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 40px;
+  }
+
+  /********************** CONTACT PAGE ***********************/
+  .contact__form {
+    left: 330px;
+    width: 320px;
+  }
+
+  .contact__icon {
+    display: inline;
+    visibility: hidden;
+    margin-top: 475px;
+    margin-left: 100%;
+    transform: translateX(-350px);
+  }
+
+  .contact__icon--bottom {
+    margin-top: 175px;
+    display: inline-block;
+  }
+
+  .green-box {
+    padding-bottom: 300px;
+    height: 1200px;
+  }
+
+  #contact {
+    /* height:1650px; */
+  }
+
+  .contact__row--bottom {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .contact__row--block {
+    margin-top: 40px;
+    display: block;
+  }
+
+  /********************** NEWS PAGE ***********************/
+  #news h1 {
+    font-size: 30px;
+  }
+
+  /*may not be included*/
+  .card__margin--bottom {
+    margin-bottom: 30px;
+  }
+
+  .follow h3 {
+    margin-bottom: 30px;
+  }
+}
+
+/*--Responsive--*/
