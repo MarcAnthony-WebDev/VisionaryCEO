@@ -1,6 +1,4 @@
 /* COLORS
-#352f44
-#2a2438
 #f4f4f4
 #8E8D8A
 #27b368
@@ -22,25 +20,15 @@ html {
 #myBtn {
   background-color: transparent;
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 10px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
   transition: .3s ease;
 }
 
@@ -65,14 +53,9 @@ u {
   color: #27b368;
 }
 
-h1 {
-  font-weight: 800;
-}
-
-h4 {}
-
 h5 {
   color: white;
+  font-size: 25px;
 }
 
 h6 {
@@ -98,7 +81,6 @@ h6 {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   color: #27b368;
-  /* <—– change your color here*/
   background-color: transparent;
 }
 
@@ -118,9 +100,6 @@ h6 {
   color: #27b368;
 }
 
-/* #top-nav {
-  height: 90px;
-} */
 p {
   font-weight: 300;
 }
@@ -172,17 +151,6 @@ p {
 }
 
 /********** ARROW BUTTONS ***************/
-a#top-btn {
-  color: #27b368;
-  font-size: 25px;
-  position: fixed;
-  bottom: 20px;
-  right: 50px;
-  z-index: 99;
-  background-color: Transparent;
-  cursor: pointer;
-  padding: 15px;
-}
 
 #down-btn {
   font-size: 60px;
@@ -196,41 +164,11 @@ a#top-btn {
   transform: scale(1.4);
 }
 
-/*
-.arrow-down-right {
-  position: absolute;
-  right: 30%;
-  bottom: 10%;
-  -webkit-animation-name: rotateLeft;
-  animation-name: rotateLeft;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.arrow-down-left {
-  position: absolute;
-  left: 30%;
-  bottom: 10%;
-  -webkit-animation-name: rotateRight;
-  animation-name: rotateRight;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-} */
 .arrow-down-middle {
   position: absolute;
   left: 50%;
   margin-left: -40px;
   bottom: 25%;
-  /* opacity: .7; */
-  /* transform: translate(-50%, -50%); */
   -webkit-animation-name: downUp;
   animation-name: downUp;
   -webkit-animation-duration: 3s;
@@ -247,22 +185,7 @@ a#top-btn {
   backface-visibility: hidden;
 }
 
-/**********CEO SECTION***************/
-.ceo-heading {
-  color: #fff;
-  font-family: Montserrat, arial;
-  font-weight: 400;
-  font-size: 4rem;
-  text-align: center;
-}
-
-.ceo-btns {
-  display: block;
-  font-size: 3rem;
-  font-family: Montserrat, arial;
-}
-
-/*******************************PODCAST*****************************************/
+/******************************PODCAST*************************************/
 #podcast {
   background-image: linear-gradient(#0000008c, #0000008c), url(/images/lance-podcast.jpg);
   background-size: cover;
@@ -271,9 +194,10 @@ a#top-btn {
 }
 
 #podcast p {
-  font-size: 20px;
+  font-size: 30px;
   font-family: Montserrat, arial;
   color: #fff;
+  margin-bottom:60px;
 }
 
 .img-container {
@@ -321,29 +245,6 @@ a#top-btn {
   margin-top: 20px;
 }
 
-/* .site-btn {
-	box-shadow: 0px 1px 0px 0px #363031;
-	background:linear-gradient(to bottom, #e54b4e 5%, #5e4e4f 100%);
-	background-color:#e54b4e;
-	border-radius:12px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Montserrat;
-	font-size:22px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #283966;
-}
-.site-btn:hover {
-	background:linear-gradient(to bottom, #5e4e4f 5%, #e54b4e 100%);
-	background-color:#5e4e4f;
-}
-.site-btn:active {
-	position:relative;
-	top:1px;
-} */
 .podcast-social {
   margin-right: 3px;
   font-size: 2rem;
@@ -351,11 +252,10 @@ a#top-btn {
 }
 
 .podcast-heading {
+  font-size: 55px;
   text-align: left;
   color: #27b368;
 }
-
-.main-hr {}
 
 .podcast-link {
   text-align: center;
@@ -481,6 +381,22 @@ a#top-btn {
   opacity: .3;
 }
 
+/****************** HOME QUOTE **************************/
+#home-quote p {
+  font-size: 100px;
+  color: #27b368;
+}
+
+#home-quote h3,
+#home-quote p {
+  font-size: 55px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.quote-mark {
+  color: #27b368;
+}
+
 /* Title Section */
 .wrapper {
   position: relative;
@@ -496,28 +412,11 @@ a#top-btn {
   background-color: black;
 }
 
-/* #top-btn {
-  /* display: none; */
-position: fixed;
-bottom: 20px;
-right: 50px;
-z-index: 99;
-background-color: Transparent;
-cursor: pointer;
-padding: 15px;
-font-size: 18px;
-}
-
-*/ #top-btn:hover {
-  transform: scale(1.5);
-}
-
 #notification-btn {
   position: fixed;
   bottom: 20px;
   left: 50px;
   z-index: 99;
-  /* background-color: Transparent; */
   cursor: pointer;
   padding: 15px;
   font-size: 35px;
@@ -571,25 +470,8 @@ font-size: 18px;
   transition: .4s;
 }
 
-#top-btn::after {
-  content: "Scroll to top";
-  display: block;
-  position: absolute;
-  bottom: 85%;
-  right: 0;
-  font-size: .8rem;
-  font-family: Montserrat, arial;
-  white-space: nowrap;
-  transform: scale(0);
-  transition: transform ease-in 150ms;
-}
-
 #arrow-up:hover {
   transform: scale(1.5);
-}
-
-#top-btn:hover::after {
-  transform: scale(1);
 }
 
 /******************** About Me Section ***********************/
@@ -602,17 +484,16 @@ font-size: 18px;
   /* font-weight: 400; */
 }
 
-.about-img {
-  position: relative;
-  bottom: 100px;
-  height: 500px;
-  width: 300px;
+.about__img {
+  width: 100%;
+  background-size: cover;
+  height: 100%;
 }
 
 .about-heading {
   font-family: Montserrat, arial;
   text-align: left;
-  /* color: #27b368; */
+  font-weight: 600;
 }
 
 .about-link {
@@ -649,11 +530,6 @@ font-size: 18px;
 }
 
 /**************** SOCIAL ***************************/
-#cta h3 {
-  font-family: Montserrat, arial;
-  font-weight: 400;
-}
-
 #testimonials p {
   font-family: Montserrat, arial;
   font-weight: 400;
@@ -661,7 +537,6 @@ font-size: 18px;
 
 /**********************Testimonials********************************/
 #testimonial-carousel {
-  /* background-image: linear-gradient(#0000008c, #0000008c), url(/images/house.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   color: #000;
@@ -670,7 +545,6 @@ font-size: 18px;
   padding: 20px 0;
   opacity: .8;
   background-color: #fff;
-  /* background-color;#27b368; */
   max-height: 400px;
 }
 
@@ -727,10 +601,6 @@ font-size: 18px;
   background-color: #3a3535;
 }
 
-.social-heading {
-  color: #27b368;
-}
-
 .social-media {
   padding-bottom: 20px;
   text-align: center;
@@ -776,24 +646,14 @@ font-size: 18px;
   color: #25d061;
 }
 
-/* .sp-circle:hover {
-  color: #007bff;
-} */
 .youtube:hover {
   color: red;
-}
-
-.snapchat:hover {
-  color: yellow;
 }
 
 .podcast-btn:hover {
   color: #27b368;
 }
 
-/* .sp-circle-invert:hover{
-  background-color:yellow;
-} */
 .instagram:hover {
   color: #08a5cb
 }
@@ -821,13 +681,16 @@ font-size: 18px;
   color: #27b368;
 }
 
+
 #footer a:hover {
+  text-decoration: none;
   color: #27b368;
 }
 
 #footer {
   background-color: black;
   padding: 2rem 0;
+  transition: all .5s
 }
 
 #footer input {
@@ -835,14 +698,6 @@ font-size: 18px;
   margin-bottom: 20px;
 }
 
-/* #footer .site-btn{
-  opacity: 1;
-  background-color:#fff;
-  width:250px;
-} */
-/* #footer .btn{
-  text-align: center;
-} */
 #footer .btn:hover {
   border-color: darken(#27b368, 20%);
   background-color: darken(#27b368, 20%);
@@ -858,11 +713,7 @@ font-size: 18px;
 }
 
 /*                      ABOUT PAGE                           */
-/* #about-title{
-  background-image: url(/images/npr-helps.jpg);
-  background-repeat: no-repeat;
-  padding: 300px 0;
-} */
+
 #about-lance {
   padding: 120px 0 30px;
 }
@@ -900,10 +751,6 @@ font-size: 18px;
   font-family: Montserrat, arial;
 }
 
-#cta h4 {
-  font-family: Montserrat, arial;
-}
-
 .description {
   font-weight: 400;
   line-height: 1.8;
@@ -914,25 +761,16 @@ font-size: 18px;
   padding-right: 10px;
 }
 
-#cta {
-  /* background-image: url(/images/white-wall.jpg); */
-  background-color: #f4f4f4;
-  padding: 75px 30px 40px;
-}
-
-#cta .form {
-  text-align: center;
-}
-
 .lance-about1 {
+  width: 80%;
   height: 700px;
   float: right;
   /* clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%) */
 }
 
 .lance-about2 {
+  width: 80%;
   height: 800px;
-  float: right;
   /* clip-path: polygon(0 29%, 100% 0, 100% 100%, 0% 100%) */
 }
 
@@ -942,13 +780,12 @@ font-size: 18px;
 }
 
 .about-quote {
-  /* background-color: #f4f4f4; */
   background-image: linear-gradient(#0000008c, #0000008c), url(/images/npr-helps.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
-  font-family: Montserrat, arial;
+  font-family: 'Montserrat', arial;
   font-weight: 600;
   margin: 50px 0;
   padding: 150px 50px;
@@ -956,6 +793,8 @@ font-size: 18px;
 }
 
 .quote-position {
+
+  font-family: 'montserrat', cursive;
   position: relative;
   top: 100px;
 }
@@ -1041,6 +880,27 @@ font-size: 18px;
   margin: 100px 0 0;
 }
 
+.news__img--top {
+  height: 350px;
+  width: 100%;
+  background-image: url(/images/Lance__news--banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+#news h1 {
+  font-size: 5rem;
+  font-family: Montserrat, arial;
+  font-weight: 600;
+}
+
+#news h1:first-child {
+  margin-bottom: 150px;
+}
+
 .lead {
   font-family: Montserrat, arial;
   margin: 30px;
@@ -1050,11 +910,109 @@ font-size: 18px;
   text-align: center;
 }
 
-.news__img {
+#news h1 {
+  animation: moveInLeft 2s ease-in-out;
+}
+
+.card{
+  border: 6px solid black;
+  border-radius: 10px;
+}
+
+.card__position {
+  position: relative;
+  top: 150px;
+}
+
+.card__1 {
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   width: 100%;
   height: 450px;
-  background-size: cover;
-  margin-bottom: 40px;
+  background-image: linear-gradient(#0000006c, #0000006c), url(/images/article.jpeg);
+  transition: .5s;
+  transform: scale(.8);
+  outline-offset: 20px;
+  top: -100px;
+}
+
+.card__1:hover {
+  background-image: url(/images/article.jpeg);
+  transform: scale(.9);
+  z-index: 10;
+  outline: 20px solid #27b368;
+}
+
+.card__2 {
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-image: linear-gradient(#0000006c, #0000006c), url(/images/news__img--middle.jpeg);
+  transition: .5s;
+  transform: scale(.8);
+  outline-offset: 20px;
+  top: -100px;
+}
+
+.card__2:hover {
+  background-image: linear-gradient(#0000008c, #0000008c), url(/images/news__img--middle.jpeg);
+  background-image: url(/images/news__img--middle.jpeg);
+  transform: scale(.9);
+  z-index: 10;
+  outline: 20px solid #27b368;
+}
+
+.card__3 {
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-image: linear-gradient(#0000006c, #0000006c), url(/images/news__img--bottom.jpeg);
+  transition: .5s;
+  transform: scale(.8);
+  outline-offset: 20px;
+  top: -100px;
+}
+
+.card__3:hover {
+  background-image: url(/images/news__img--bottom.jpeg);
+  transform: scale(.9);
+  z-index: 10;
+  outline: 20px solid #27b368;
+}
+
+.podcast__hover {
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.podcast__hover:hover {
+  transform: translateY(-3px  );
+  opacity: .8;
+  text-decoration: none;
+}
+
+.news__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.news__hover:hover {
+  text-decoration: none;
+}
+
+.news__img:hover {
+  background-image: linear-gradient(#0000008c, #0000008c), url(/images/article.jpeg);
 }
 
 .card {
@@ -1063,12 +1021,39 @@ font-size: 18px;
 }
 
 .card-title {
+  font-family: 'Montserrat', arial;
+  margin-top: 20px;
   color: #000;
   font-weight: 400;
 }
 
+#news .card__position .btn-outline-dark {
+  margin-top: 80px;
+}
+
+.row__articles:first-child {
+  position: relative;
+  margin: 100px 0 0;
+}
+
+.row__articles {
+  margin: 30px 30px 0 30px;
+}
+
 .row__podcast {
-  margin: 50px 0;
+  margin: 100px 0;
+}
+
+.podcast__heading {
+  margin-bottom: 50px;
+}
+
+.news__h2 {
+  color: #27b368;
+}
+
+.news__p {
+  font-family: Montserrat, arial;
 }
 
 .follow {
@@ -1084,6 +1069,7 @@ font-size: 18px;
 .follow .btn {
   margin: 0 10px 10px;
 }
+
 
 /*******************************ANIMATIONS***************************/
 .js-show-on-scroll {
@@ -1172,16 +1158,6 @@ font-size: 18px;
   }
 }
 
-/************************ Other Browsers **************************/
-/* @media not all and (min-resolution:.001dpcm) {
-    @media {
-        .carouse-logo {
-            position:relative;
-            bottom: 600px;
-
-        }
-    }
-} */
 /*--Responsive--*/
 /*---DesktopCode---*/
 @media (min-width: 1200px) {
@@ -1268,6 +1244,12 @@ font-size: 18px;
 
   .contact__icon--bottom {
     display: none;
+  }
+
+  /****************** NEWS **********************/
+  .news__p {
+    letter-spacing: 1px;
+    line-height: 2;
   }
 }
 
@@ -1404,14 +1386,6 @@ font-size: 18px;
     width: 70%;
   }
 
-  .ceo-heading {
-    font-size: 3rem;
-  }
-
-  .ceo-btns {
-    font-size: 2rem;
-  }
-
   .article-elements-center {
     padding: 20px 0 95px;
   }
@@ -1446,6 +1420,18 @@ font-size: 18px;
   /*********************Nav**********************************/
   .navbar .navbar-expand-lg {
     text-align: center;
+  }
+
+  /********************** ABOUT PAGE ***********************/
+  .lance-about1 {
+    position: relative;
+    top: 150px;
+    width: 100%;
+  }
+
+  .lance-about2 {
+    height: 85%;
+    width: 100%;
   }
 
   /********************** CONTACT PAGE ***********************/
@@ -1503,7 +1489,6 @@ font-size: 18px;
   nav {
     font-weight: 100;
     font-size: 2rem;
-    /* font-weight: 500; */
     color: white;
   }
 
@@ -1516,14 +1501,6 @@ font-size: 18px;
 
   .arrow-down-middle {
     display: block;
-  }
-
-  .arrow-down-right {
-    display: none;
-  }
-
-  .arrow-down-left {
-    display: none;
   }
 
   .social {
@@ -1541,14 +1518,6 @@ font-size: 18px;
     width: 75%;
   }
 
-  .ceo-heading {
-    font-size: 2.25rem;
-  }
-
-  .ceo-btns {
-    font-size: 1.75rem;
-  }
-
   /***********************About Section**************************/
   #about-me {
     padding-top: 20%;
@@ -1556,7 +1525,7 @@ font-size: 18px;
   }
 
   .lance-about-img {
-    float: left;
+    background-image: url(/images/lance4--mobile.png);
     height: 110%;
     width: 150%;
   }
@@ -1587,7 +1556,16 @@ font-size: 18px;
     text-align: center;
   }
 
-  /******************** #cta *******************/
+  /********************** PODCAST ***********************/
+  .podcast-heading {
+    font-size: 40px;
+  }
+
+  #podcast p {
+    font-size: 25px;
+
+  }
+
   #testimonial-carousel h3 {
     font-size: 22px;
   }
@@ -1604,6 +1582,13 @@ font-size: 18px;
     margin-bottom: 40px;
   }
 
+  /*********************Quote**********************************/
+  #home-quote h3,
+  #home-quote p,
+  #home-quote span {
+    font-size: 35px;
+  }
+
   /*********************Footer**********************************/
   .vl {
     display: none;
@@ -1612,6 +1597,10 @@ font-size: 18px;
   /************ ABOUT PAGE ***************/
   .quote-position {
     font-size: 20px;
+  }
+
+  .lance-about2 {
+    height: 60%;
   }
 
   /********************** CONTACT PAGE ***********************/
@@ -1636,8 +1625,6 @@ font-size: 18px;
     height: 1100px;
   }
 
-  #contact {}
-
   .contact__row--bottom {
     margin-top: 10px;
     text-align: left;
@@ -1650,6 +1637,24 @@ font-size: 18px;
   /********************** NEWS PAGE ***********************/
   .card__margin--bottom {
     margin-bottom: 30px;
+  }
+
+  #news {
+    text-align: center;
+  }
+
+  .news__img--top {
+    background-image: url(/images/lance__news--tablet.png);
+  }
+
+  #news h1:first-child {
+    margin: 0;
+  }
+
+  .card__1,
+  .card__2,
+  .card__3 {
+    top: 0;
   }
 
   .follow h3 {
@@ -1701,13 +1706,6 @@ font-size: 18px;
     transform: scale(1.2);
   }
 
-  /* .arrow-down-right{
-    display: none;
-  }
-
-  .arrow-down-left{
-    display:none;
-  } */
   .social {
     color: white;
     position: absolute;
@@ -1716,17 +1714,10 @@ font-size: 18px;
   }
 
   /******************************carousel Section***********************/
-  .ceo-heading {
-    font-size: 1.7rem;
-  }
 
   .navbar-toggler {
     line-height: 1;
     margin: 0 auto;
-  }
-
-  .ceo-btns {
-    font-size: 1.7rem;
   }
 
   .carousel-header {
@@ -1735,7 +1726,11 @@ font-size: 18px;
 
   /***********************Podcast Section**************************/
   #podcast p {
-    font-size: 16px;
+    font-size: 25px;
+  }
+
+  .podcast-heading {
+    font-size: 45px;
   }
 
   /***********************About Section**************************/
@@ -1761,7 +1756,13 @@ font-size: 18px;
     ;
   }
 
-  /******************** #cta *******************/
+  /*********************Quote**********************************/
+  #home-quote h3,
+  #home-quote p,
+  #home-quote span {
+    font-size: 35px;
+  }
+
   #testimonial-carousel h3 {
     font-size: 22px;
   }
@@ -1782,12 +1783,8 @@ font-size: 18px;
     bottom: 50px;
   }
 
-  /*********************Nav**********************************/
   /*********************Footer**********************************/
-  /* #footer .row{
-    margin-left: 50%;
-    transform: translateX(-120px);
-  } */
+
   #footer .row {
     text-align: center;
   }
@@ -1803,19 +1800,13 @@ font-size: 18px;
   }
 
   .lance-about1 {
+    width: 100%;
     height: 500px;
   }
 
   .lance-about2 {
+    width: 100%;
     height: 500px;
-  }
-
-  #cta h1 {
-    font-size: 24px;
-  }
-
-  #cta h4 {
-    font-size: 17px;
   }
 
   .description-hidden-mobile {
@@ -1862,10 +1853,6 @@ font-size: 18px;
     height: 1200px;
   }
 
-  #contact {
-    /* height:1650px; */
-  }
-
   .contact__row--bottom {
     margin-top: 10px;
     margin-left: 0px;
@@ -1881,7 +1868,24 @@ font-size: 18px;
     font-size: 30px;
   }
 
-  /*may not be included*/
+  .news__img--top {
+    background-image: url(/images/lance__news--mobile.png);
+  }
+
+  #news {
+    text-align: center;
+  }
+
+  #news h1:first-child {
+    margin: 0;
+  }
+
+  .card__1,
+  .card__2,
+  .card__3 {
+    top: 0;
+  }
+
   .card__margin--bottom {
     margin-bottom: 30px;
   }
